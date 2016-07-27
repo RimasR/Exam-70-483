@@ -5,11 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppThreading"
         mc:Ignorable="d"
-        Title="Threading" Height="350" Width="525">
-    <Grid>
-        <Button x:Name="buttonStart" Content="Start" HorizontalAlignment="Left" VerticalAlignment="Top" Width="245" Height="62" Margin="10,10,0,0" Click="ButtonStart_Click"/>
-        <Button x:Name="buttonCancel" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="245" Height="62" Margin="262,10,0,0" Click="ButtonCancel_Click"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="10,77,0,0" Height="233" Width="497"/>
-
+        Title="Threading" Height="350" Width="530.085">
+    <Grid Margin="0,0,2,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="171*"/>
+            <RowDefinition Height="149*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="resultsTextBox" HorizontalAlignment="Left" Height="250" Margin="10,60,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="500" Grid.RowSpan="2" FontFamily="Lucida Console"/>
+        <Button x:Name="startButton" Content="Start" HorizontalAlignment="Left" VerticalAlignment="Top" Width="240" Margin="10,10,0,0" Height="45" Click="startButton_Click"/>
     </Grid>
 </Window>
